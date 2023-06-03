@@ -1,0 +1,268 @@
+body{
+    margin: 0;
+    padding: 0;
+    /* height: 3000px; */
+}
+
+nav{
+    width: 100%;
+    position: absolute;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.349);
+    background-color: #ffff;
+    z-index: 1;
+    height: 10px;
+    
+
+}
+
+.container1{
+    width: 95%;
+    margin: auto;
+    
+}
+
+.logoo{
+    animation: move 2s infinite;
+}
+@keyframes move {
+    0%   {background-color:rgba(255, 0, 34, 0.116); left:0px; top:0px;}
+    25%  {background-color:rgba(255, 0, 34, 0.178); left:200px; top:0px;}
+    50%  {background-color:rgba(170, 12, 12, 0.144); left:200px; top:200px;}
+    75%  {background-color:rgba(233, 57, 57, 0.151); left:0px; top:200px;}
+    100% {background-color:rgba(235, 117, 117, 0.171); left:0px; top:0px;}
+}
+nav ul{
+    float: right;
+}
+nav ul li{
+    display: inline-block;
+    margin: 5px;
+    transition: all .5s linear;
+    
+}
+
+nav ul li:hover{
+    transform: translate(5px);
+    
+}
+
+
+
+nav ul li a{
+    text-decoration: none;
+    background-color: #AC001E;
+    color: #ffff;
+    padding: 10px;
+}
+
+nav ul li a:hover{
+    background-color: #fffdfd;
+    color: #AC001E;
+    
+}
+
+header{
+    position: relative;
+}
+
+header img{
+    width: 100%;
+    height: 100%;
+}
+
+header h1{
+    position: absolute;
+    top: 45%;
+    left: 38%;
+    color: #ffff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    animation: m 0.5s forwards;
+
+}
+
+@keyframes m{
+    0% {top : 20px; font-size: 20px;}
+    50% {top: 50px; font-size: 25px;}
+
+}
+
+header h1 span{
+    background-color: black;
+    padding: 10px;
+    opacity: .7;
+    border-radius: 5px;
+}
+header h1:hover{
+    letter-spacing: 20px;
+    color: #FF0833;
+    transition: 1s;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+header h1 span:hover{
+    background-color: #ffffff;
+    color: #FF0833;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transition: 1.2s;
+    text-align: center;
+}
+hr{
+    opacity: .4;
+}
+.container2{
+    width: 90%;
+    margin: auto;
+}
+
+.sec1 .prod{
+    float: left;
+    margin: 2%;
+    width:calc(84%/4);
+    position: relative;
+    transition: all .5s ease-in-out;
+}
+
+.sec1 .prod img{
+    width: 100%;
+    height: 100%;
+}
+
+.sec1 .prod div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #FF3659;
+    color: #ffff;
+    padding: 10px;
+
+}
+
+.sec1 .prod:hover{
+    transform: scale(1.);
+    cursor: pointer;
+}
+
+.sec2{
+    clear: both;
+}
+
+.container3{
+    width: 90%;
+    margin: auto;
+}
+
+.sec2 .team{
+    float: left;
+    margin: 1%;
+    width: calc(92%/4);
+}
+
+.sec2 .team img{
+    width: 100%;
+    height: 100%;
+}
+.sec2 .team span{
+    opacity: .6;
+    font-size: 18px;
+}
+
+.sec2 .team h4{
+    font-size: 20px;
+}
+.sec2 .team p{
+    font-family: sans-serif;
+    word-spacing: 3px;
+}
+h2,h3,h5,h6{
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.sec2 .team button{
+    width: 100%;
+    border: none;
+    padding: 10px;
+    background-color: #FF3659;
+    color: #ffff;
+    letter-spacing: 2px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.sec2 .team button:hover{
+    background-color: black;
+}
+
+.sec3{
+    float: left;
+    clear: both;
+    margin-top: 50px;
+    width: 100%;
+}
+
+.container4{
+    width: 90%;
+    margin: auto;
+}
+.sec3 form{
+    width: 100%;
+}
+.sec3 form input{
+    display: block;
+    width: 100%;
+    margin: 15px 0;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.363);
+    outline: none;
+}
+
+.sec3 form button{
+    width: 20%;
+    border: none;
+    padding: 10px;
+    background-color: #FF3659;
+    color: #ffff;
+    letter-spacing: 2px;
+    font-weight: bold;
+    cursor: pointer;
+    /* margin: auto;
+    display: block; */
+    text-transform: uppercase;
+}
+
+.sec3 form button:hover{
+    background-color: black;
+
+}
+
+.sec3 iframe{
+    width: 100%;
+
+} 
+
+footer{
+    padding: 30px;
+    clear: both;
+    background-color: black;
+    color: #ffff;
+    text-align: center;
+
+}
+
+footer p a{
+    color: #FF3659;
+    font-size: 20px;
+}
+
+footer p a:hover{
+    color: #ffff;
+}
+
+.arrow{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+html{
+    scroll-behavior: smooth;
+}
